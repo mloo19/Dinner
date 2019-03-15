@@ -11,21 +11,89 @@ You wake up in a steaming hot bath. Suddenly, a huge hand lifts the ceiling of t
 
 Dinner
 An Interactive Fiction by mloo19
-Release 1 / Serial number 190312 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190314 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Steamer
-A round, bamboo steamer resting on a pot of boiling water.
+A round, bamboo steamer resting on a pot of boiling water. The Human's chopsticks rest in the steamer, and five other steamed buns are huddled next to you. The cover is on the steamer, but you notice light coming through a crack in the top.
 
-The Human stands over the Steamer with her chopsticks, ready to grab the next steamed bun.
+The Human stands over the Steamer, ready to grab the next steamed bun.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1318"></child>
+        <children><child nodeId="node-1499"></child>
+            <child nodeId="node-1501"></child>
+            <child nodeId="node-1496"></child>
+            <child nodeId="node-1318"></child>
         </children>
     </item>
     <item nodeId="node-1318">
         <command xml:space="preserve">x human</command>
         <result xml:space="preserve">An old, Chinese woman.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1496">
+        <command xml:space="preserve">put the chopsticks in the crack</command>
+        <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do is open the steamer.
+
+"I'm hungry," The Human says.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1497"></child>
+        </children>
+    </item>
+    <item nodeId="node-1497">
+        <command xml:space="preserve">push chopsticks</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1498"></child>
+        </children>
+    </item>
+    <item nodeId="node-1498">
+        <command xml:space="preserve">push the chopsticks</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1501">
+        <command xml:space="preserve">put chopsticks in the crack</command>
+        <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do is open the steamer.
+
+"I'm hungry," The Human says.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1502"></child>
+        </children>
+    </item>
+    <item nodeId="node-1502">
+        <command xml:space="preserve">push chopsticks</command>
+        <result xml:space="preserve">You push the Chopsticks around and accidentally poke one of the steamed buns!
+
+"I'm hungry," The Human says.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1499">
+        <command xml:space="preserve">put chopsticks in crack</command>
+        <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do is open the steamer.
+
+"I'm hungry," The Human says.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1500"></child>
+        </children>
+    </item>
+    <item nodeId="node-1500">
+        <command xml:space="preserve">push chopsticks</command>
+        <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
