@@ -11,18 +11,25 @@ You wake up in a steaming hot bath. Suddenly, a huge hand lifts the ceiling of t
 
 Dinner
 An Interactive Fiction by mloo19
-Release 1 / Serial number 190314 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190401 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Steamer
 A round, bamboo steamer resting on a pot of boiling water. The Human's chopsticks rest in the steamer, and five other steamed buns are huddled next to you. The cover is on the steamer, but you notice light coming through a crack in the top.
 
-The Human stands over the Steamer, ready to grab the next steamed bun.
+You can see a Chopsticks here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1499"></child>
+        <children><child nodeId="node-1533"></child>
+            <child nodeId="node-1523"></child>
+            <child nodeId="node-1529"></child>
+            <child nodeId="node-1512"></child>
+            <child nodeId="node-1499"></child>
+            <child nodeId="node-1517"></child>
             <child nodeId="node-1501"></child>
             <child nodeId="node-1496"></child>
+            <child nodeId="node-1510"></child>
+            <child nodeId="node-1534"></child>
             <child nodeId="node-1318"></child>
         </children>
     </item>
@@ -31,6 +38,66 @@ The Human stands over the Steamer, ready to grab the next steamed bun.
         <result xml:space="preserve">An old, Chinese woman.
 
 &gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1534">
+        <command xml:space="preserve">x buns</command>
+        <result xml:space="preserve">You see nothing special about the Steamed Buns.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1535"></child>
+        </children>
+    </item>
+    <item nodeId="node-1535">
+        <command xml:space="preserve">climb buns</command>
+        <result xml:space="preserve">You climb on top of the Steamed Bun next to you, but the cover is still closed, preventing you from escaping.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1536"></child>
+        </children>
+    </item>
+    <item nodeId="node-1536">
+        <command xml:space="preserve">put chopsticks in crack</command>
+        <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do push the chopsticks to get the cover off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1537"></child>
+        </children>
+    </item>
+    <item nodeId="node-1537">
+        <command xml:space="preserve">push chopsticks</command>
+        <result xml:space="preserve">You roll onto the end of the chopsticks, making the crack wider. After a couple more seconds, the cover is off, and it falls to the Kitchen Table Top. Now you can escape!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1538"></child>
+        </children>
+    </item>
+    <item nodeId="node-1538">
+        <command xml:space="preserve">climb bun</command>
+        <result xml:space="preserve">You climb out of the Steamer and fall on the Kitchen Table Top.
+
+Kitchen Table Top
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1510">
+        <command xml:space="preserve">take chopsticks</command>
+        <result xml:space="preserve">You try, but you don't have any hands. Try  nudging something.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1511"></child>
+        </children>
+    </item>
+    <item nodeId="node-1511">
+        <command xml:space="preserve">nudge chopsticks</command>
+        <result xml:space="preserve">&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
     <item nodeId="node-1496">
@@ -80,11 +147,34 @@ The Human stands over the Steamer, ready to grab the next steamed bun.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1499">
+    <item nodeId="node-1517">
+        <command xml:space="preserve">put chopsticks in steamer</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1518"></child>
+        </children>
+    </item>
+    <item nodeId="node-1518">
         <command xml:space="preserve">put chopsticks in crack</command>
         <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do is open the steamer.
 
-"I'm hungry," The Human says.
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1519"></child>
+        </children>
+    </item>
+    <item nodeId="node-1519">
+        <command xml:space="preserve">push chopsticks</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1499">
+        <command xml:space="preserve">put chopsticks in crack</command>
+        <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do is open the steamer.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -93,6 +183,112 @@ The Human stands over the Steamer, ready to grab the next steamed bun.
     </item>
     <item nodeId="node-1500">
         <command xml:space="preserve">push chopsticks</command>
+        <result xml:space="preserve">You roll onto the end of the chopsticks, making the crack wider. After a couple more seconds, the cover is off, and it falls to the ground.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1522"></child>
+            <child nodeId="node-1527"></child>
+        </children>
+    </item>
+    <item nodeId="node-1527">
+        <command xml:space="preserve">get on steamed buns</command>
+        <result xml:space="preserve">That's not something you can enter.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1528"></child>
+        </children>
+    </item>
+    <item nodeId="node-1528">
+        <command xml:space="preserve">climb on steamed buns</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1522">
+        <command xml:space="preserve">d</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1512">
+        <command xml:space="preserve">push chopsticks</command>
+        <result xml:space="preserve">You push the Chopsticks around and accidentally poke one of the other steamed buns!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1513"></child>
+        </children>
+    </item>
+    <item nodeId="node-1513">
+        <command xml:space="preserve">put chopsticks in crack</command>
+        <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do is open the steamer.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1514"></child>
+        </children>
+    </item>
+    <item nodeId="node-1514">
+        <command xml:space="preserve">push chopsticks</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1529">
+        <command xml:space="preserve">get on steamed buns</command>
+        <result xml:space="preserve">That's not something you can enter.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1530"></child>
+        </children>
+    </item>
+    <item nodeId="node-1530">
+        <command xml:space="preserve">stand on steamed buns</command>
+        <result xml:space="preserve">That's not something you can stand on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1531"></child>
+        </children>
+    </item>
+    <item nodeId="node-1531">
+        <command xml:space="preserve">stand on buns</command>
+        <result xml:space="preserve">That's not something you can stand on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1532"></child>
+        </children>
+    </item>
+    <item nodeId="node-1532">
+        <command xml:space="preserve">climb on buns</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1523">
+        <command xml:space="preserve">climb steamed buns</command>
+        <result xml:space="preserve">You climb on top of the Steamed Bun next to you, but the cover is still closed, preventing you from escaping.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1524"></child>
+        </children>
+    </item>
+    <item nodeId="node-1524">
+        <command xml:space="preserve">get on steam buns</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1533">
+        <command xml:space="preserve">climb on buns</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
