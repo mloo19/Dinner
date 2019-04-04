@@ -16,21 +16,28 @@ To say exit list:
 The description of the player is "A white, fluffy bun."
 
 Understand "grab [something]" or "hold [something]" or "pick [something] up" or "pick up [something]" as taking.
-
-Instead of taking something:
-	say "You try, but you don't have any hands. Try [bold type] nudging something."
 	
 Understand "move [something]" or "nudge [something]" as pushing.
 
 The Steamer is a room. The description of the Steamer is "A round, bamboo steamer resting on a pot of boiling water. The Human's chopsticks rest in the steamer, and five other steamed buns are huddled next to you. The cover is on the steamer, but you notice light coming through a crack in the top."
 
-The Chopsticks is a thing. It is in the Steamer.
+Noname is a man in the Steamer. “Noname is a fellow steamed bun huddled in the corner of the Steamer trying not to be eaten.” The description is “A white fluffy steamed bun with great advice.” 
 
-The Crack is a container. It is openable and closed. It is in the Steamer. It is undescribed.
+Talking to is an action applying to one visible thing.
+Understand "talk to [someone]" or “converse with [someone]” as talking to.
+Check talking to: say "[The noun] doesn't reply."
+
+Instead of talking to Noname:
+say "'Hi, there,' you say.[paragraph break]'Hi,' he replies nervously.[paragraph break]'How long have you been in here,' you ask.[paragraph break]'Long enough to know what's about to happen,' Noname replies. [paragraph break]'Do you know how to get out of here?' you ask.[paragraph break]Noname looks around nervously. 'I heard the last successful steamed bun was able to escape after eating some green onion from the cutting board. But that was years ago, and you have to figure out how to get out of the steamer.'[paragraph break]After hearing this, you decide against talking any further with Noname right
+now.".
+
+The Chopsticks is a thing. It is in the Steamer. "Two wooden sticks used as a utensil to eat or cook."
+
+The Crack is a container. "A small opening in the cover. Maybe this is your time to escape." It is openable and closed. It is in the Steamer. It is undescribed.
 
 The X is a container in the Steamer. It is undescribed.
 
-The Cover is a thing in the Steamer. It is undescribed. Understand "lid" or "top" as cover.
+The Cover is a thing in the Steamer. It is undescribed. Understand "lid" or "top" as cover. The description of the Cover is "A bamboo lid that keeps the steam and heat in the steamer."
 
 Instead of inserting the Chopsticks into the Crack:
 	say "You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do push the chopsticks to get the cover off.";
@@ -38,9 +45,7 @@ Instead of inserting the Chopsticks into the Crack:
 	
 Instead of pushing the Chopsticks:
 	if the chopsticks are in the X:
-		say "You roll onto the end of the chopsticks, making the crack wider. After a couple more seconds, the cover is off, and it falls to the Kitchen Table Top. Now you can escape!
-		
-		The Human turns to see what the noise was.";
+		say "You roll onto the end of the chopsticks, making the crack wider. After a couple more seconds, the cover is off, and it falls to the Kitchen Table Top. Now you can escape![paragraph break]The Human turns to see what the noise was.";
 		move the Cover to the Kitchen Table Top;
 		now the Crack is open;
 	otherwise:
@@ -60,7 +65,7 @@ Instead of climbing the Steamed Buns:
 		say "You climb out of the Steamer and fall on the Kitchen Table Top.";
 		move the player to the Kitchen Table Top.
 	
-Understand "stand on" or "get on" or "get on top of" or "climb on top of" or "climb on" as climbing.
+[Understand "stand on" or "get on" or "get on top of" or "climb on top of" or "climb on" as climbing.]
 
 A Steamed Buns is a thing. It is in the Steamer. It is undescribed. It is edible. Understand "bun" or "buns" or "steamed" as the Steamed Buns. "You look around the steamer and see your fellow steamed buns just as scared as you are."
 
@@ -83,33 +88,52 @@ Every turn:
 		let the way be the best route from the location of The Human to the location of the player;
 		try The Human going the way;
 	otherwise:
-		say "'I'm hungry,' The Human says.".
-	
-Talking to is an action applying to one visible thing.
-Understand "talk to [someone]" or “converse with [someone]” as talking to.
-Check talking to: say "[The noun] doesn't reply."
+		say "'I'm hungry,' The Human says.".]
 
-Quizzing it about is an action applying to two things. Understand "ask [someone] about [something]"
-and "quiz [someone] about [something]" as quizzing it about.
-Check quizzing it about:
-say "[The noun] shrugs unhelpfully."
+The Kitchen Table Top is below the Steamer. "[if unvisited] You land on the granite surface behind the Cover, so the Human can't see you. [end if]." Understand "kitchen" or "kitchen table" as Kitchen Table Top.
 
-Informing it about is an action applying to two things. Understand "tell [someone] about [something]"
-and "inform [someone] about [something]" as informing it about.]
+The Cutting Board is a thing in the Kitchen Table Top. "Freshly cut Green Onions lie on the Cutting Board."
 
-The Kitchen Table Top is below the Steamer. "You land behind the fallen Cover of the Steamer, hidden from the Human's view." Understand "kitchen" or "kitchen table" as Kitchen Table Top.
+The Green Onions is a thing on the Cutting Board. The Green Onions are edible.
+
+A person can be armful or armless. A person is usually armless. 
+
+Instead of eating the Green Onions:
+	say "You roll over the Cutting Board and eat a green onion, and then you feel a tingling in your body. Suddenly, you watch as two arms and two legs grow out of your body.";
+	now the player is armful.
+
+Instead of taking something:
+	if the player is armless:
+		say "You try, but you don't have any hands yet. Try [bold type] nudging something.";
+	if the player is armful:
+		continue the action.
+
+A person can be hidden or nothidden. A person is usually nothidden. 
+
+Hiding behind is an action applying to one thing. Understand "hide behind [something]" as hiding behind.
+
+Instead of hiding behind:
+	say "Now the Human can't see you.";
+
+The Napkin Holder is a thing in the Kitchen Table Top. 
 
 The Sink is east of the Kitchen Table Top. 
 
-The Plate Cover is east of the Sink.
+The Plate is east of the Sink.
 
-The Bowl Cover is east of the Plate Cover.
+The Bowl is east of the Plate.
 
-The Window is above the Bowl Cover.
+The Window is above the Bowl.
 
 The Cabinet is west of the Kitchen Table Top.
 
 The Dinner Table is south of the Sink. 
+
+An every turn rule:
+	if the Human is visible:
+		if the player is nothidden:
+			say "The Human TAKES YOU!!!!";
+			end the story finally.
 
 
 	

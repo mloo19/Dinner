@@ -11,12 +11,14 @@ You wake up in a steaming hot bath. Suddenly, a huge hand lifts the ceiling of t
 
 Dinner
 An Interactive Fiction by mloo19
-Release 1 / Serial number 190401 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190403 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Steamer
 A round, bamboo steamer resting on a pot of boiling water. The Human's chopsticks rest in the steamer, and five other steamed buns are huddled next to you. The cover is on the steamer, but you notice light coming through a crack in the top.
 
-You can see a Chopsticks here.
+Troy is a fellow steamed bun huddled in the corner of the Steamer trying not to be eaten.
+
+Two wooden sticks used as a utensil to eat or cook.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
@@ -29,6 +31,7 @@ You can see a Chopsticks here.
             <child nodeId="node-1501"></child>
             <child nodeId="node-1496"></child>
             <child nodeId="node-1510"></child>
+            <child nodeId="node-1539"></child>
             <child nodeId="node-1534"></child>
             <child nodeId="node-1318"></child>
         </children>
@@ -82,6 +85,25 @@ You can see a Chopsticks here.
 
 Kitchen Table Top
 The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1539">
+        <command xml:space="preserve">talk to troy</command>
+        <result xml:space="preserve">"Hi, there," you say.
+
+"Hi," he replies nervously.
+
+"How long have you been in here," you ask.
+
+"Long enough to know what's about to happen," Troy replies. 
+
+"Do you know how to get out of here?" you ask.
+
+Troy looks around nervously. "I heard the last successful steamed bun was able to escape after eating some green onion from the cutting board. But that was years ago, and you have to figure out how to get out of the steamer."
+
+After hearing this, you decide against talking any further with Troy right now.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
