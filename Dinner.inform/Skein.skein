@@ -11,12 +11,12 @@ You wake up in a steaming hot bath. Suddenly, a huge hand lifts the ceiling of t
 
 Dinner
 An Interactive Fiction by mloo19
-Release 1 / Serial number 190405 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190409 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Steamer
 A round, bamboo steamer resting on a pot of boiling water. The Human's chopsticks rest in the steamer, and five other steamed buns are huddled next to you. The cover is on the steamer, but you notice light coming through a crack in the top.
 
-Noname is a fellow steamed bun huddled in the corner of the Steamer trying not to be eaten.
+Steve is a fellow steamed bun huddled in the corner of the Steamer trying not to be eaten.
 
 You can also see a Chopsticks here.
 
@@ -34,6 +34,7 @@ You can also see a Chopsticks here.
             <child nodeId="node-1494"></child>
             <child nodeId="node-1493"></child>
             <child nodeId="node-1531"></child>
+            <child nodeId="node-1563"></child>
             <child nodeId="node-1488"></child>
             <child nodeId="node-1487"></child>
         </children>
@@ -90,6 +91,68 @@ The Human is super hungry, and she waits for the steamed buns to finish cooking.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1563">
+        <command xml:space="preserve">test stm</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] put chopsticks in crack
+You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do push the chopsticks to get the cover off.
+
+&gt;[2] push chopsticks
+You roll onto the end of the chopsticks, making the crack wider. After a couple more seconds, the cover is off, and it falls to the Kitchen Table Top. Now you can go down and escape!
+
+The Human turns to see what the noise was.
+
+&gt;[3] down.
+Kitchen Table Top
+ You land on the granite surface behind the Cover, so the Human can't see you.  The Human's cutting board and a napkin holder lie on the surface.
+
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+You can also see a Chopsticks, a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
+
+The Human goes towards the the Steamer.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] put chopsticks in crack
+[2] push chopsticks
+[3] down.
+</commentary>
+        <children><child nodeId="node-1567"></child>
+        </children>
+    </item>
+    <item nodeId="node-1567">
+        <command xml:space="preserve">test hga</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] hide behind napkin holder
+You roll behind the Napkin Holder. Now the Human can't see you.
+
+THE HUMAN TAKES YOU!!!!
+
+
+
+    *** The End ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; [2] eat green onions
+Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; [3] take chopsticks.
+Please give one of the answers above.
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve">[1] hide behind napkin holder
+[2] eat green onions
+[3] take chopsticks.
+</commentary>
+        <children></children>
     </item>
     <item nodeId="node-1531">
         <command xml:space="preserve">test STM</command>
@@ -384,15 +447,13 @@ The Human turns to see what the noise was.
 
 &gt;[3] down.
 Kitchen Table Top
- You land on the granite surface behind the Cover, so the Human can't see you. 
+ You land on the granite surface behind the Cover, so the Human can't see you.  The Human's cutting board and a napkin holder lie on the surface.
 
 The Human is super hungry, and she waits for the steamed buns to finish cooking.
 
-Freshly cut Green Onions lie on the Cutting Board.
+You can also see a Chopsticks, a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
 
-On the Cutting Board is a Green Onions.
-
-You can also see a Napkin Holder here.
+The Human goes towards the the Cabinet.
 
 &gt;</result>
         <commentary xml:space="preserve">[1] put chopsticks in crack

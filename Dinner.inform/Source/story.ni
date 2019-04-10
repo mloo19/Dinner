@@ -21,14 +21,14 @@ Understand "move [something]" or "nudge [something]" as pushing.
 
 The Steamer is a room. The description of the Steamer is "A round, bamboo steamer resting on a pot of boiling water. The Human's chopsticks rest in the steamer, and five other steamed buns are huddled next to you. The cover is on the steamer, but you notice light coming through a crack in the top."
 
-Noname is a man in the Steamer. “Noname is a fellow steamed bun huddled in the corner of the Steamer trying not to be eaten.” The description is “A white fluffy steamed bun with great advice.” 
+Steve is a man in the Steamer. “Steve is a fellow steamed bun huddled in the corner of the Steamer trying not to be eaten.” The description is “A white fluffy steamed bun with great advice.” 
 
 Talking to is an action applying to one visible thing.
 Understand "talk to [someone]" or “converse with [someone]” as talking to.
 Check talking to: say "[The noun] doesn't reply."
 
-Instead of talking to Noname:
-say "'Hi, there,' you say.[paragraph break]'Hi,' he replies nervously.[paragraph break]'How long have you been in here,' you ask.[paragraph break]'Long enough to know what's about to happen,' Noname replies. [paragraph break]'Do you know how to get out of here?' you ask.[paragraph break]Noname looks around nervously. 'I heard the last successful steamed bun was able to escape after eating some green onion from the cutting board. But that was years ago, and you have to figure out how to get out of the steamer.'[paragraph break]After hearing this, you decide against talking any further with Noname right
+Instead of talking to Steve:
+say "'Hi, there,' you say.[paragraph break]'Hi,' he replies nervously.[paragraph break]'How long have you been in here,' you ask.[paragraph break]'Long enough to know what's about to happen,' Steve replies. [paragraph break]'Do you know how to get out of here?' you ask.[paragraph break]Steve looks around nervously. 'I heard the last successful steamed bun was able to escape after eating some green onion from the cutting board. But that was years ago, and you have to figure out how to get out of the steamer.'[paragraph break]After hearing this, you decide against talking any further with Steve right
 now.".
 
 The Chopsticks is a thing. It is in the Steamer. The description of the Chopsticks is "Two wooden sticks used as a utensil to eat or cook."
@@ -45,8 +45,9 @@ Instead of inserting the Chopsticks into the Crack:
 	
 Instead of pushing the Chopsticks:
 	if the chopsticks are in the X:
-		say "You roll onto the end of the chopsticks, making the crack wider. After a couple more seconds, the cover is off, and it falls to the Kitchen Table Top. Now you can escape![paragraph break]The Human turns to see what the noise was.";
+		say "You roll onto the end of the chopsticks, making the crack wider. After a couple more seconds, the cover is off, and it falls to the Kitchen Table Top. Now you can go down and escape![paragraph break]The Human turns to see what the noise was.";
 		move the Cover to the Kitchen Table Top;
+		move the Chopsticks to the Kitchen Table Top;
 		now the Crack is open;
 	otherwise:
 		say "You push the Chopsticks around and accidentally poke one of the other steamed buns!".  
@@ -59,17 +60,17 @@ Instead of going down:
 			now the player is hidden;
 			move the player to the Kitchen Table Top.
 
-Instead of climbing the Steamed Buns:
+[Instead of climbing the Steamed Buns:
 	if the Crack is closed:
 		say "You climb on top of the Steamed Bun next to you, but the cover is still closed, preventing you from escaping.";
 	If the Crack is open:
 		say "You climb out of the Steamer and fall on the Kitchen Table Top.";
 		now the player is hidden;
 		move the player to the Kitchen Table Top.
+		
+Understand "get on" or "get on top of" or "climb on top of" or "climb on" as climbing.]
 
 Test STM with "put chopsticks in Crack/push chopsticks/down.".
-	
-Understand "get on" or "get on top of" or "climb on top of" or "climb on" as climbing.
 
 A Steamed Buns is a thing. It is in the Steamer. It is undescribed. It is edible. Understand "bun" or "buns" or "steamed" as the Steamed Buns. The description of the Steamed Buns is "You look around the steamer and see your fellow steamed buns just as scared as you are."
 
@@ -94,11 +95,11 @@ Every turn:
 	otherwise:
 		say "'I'm hungry,' The Human says.".]
 
-The Kitchen Table Top is below the Steamer. "[if unvisited] You land on the granite surface behind the Cover, so the Human can't see you. [end if]". Understand "kitchen" or "kitchen table" as Kitchen Table Top.
+The Kitchen Table Top is below the Steamer. "[if unvisited] You land on the granite surface behind the Cover, so the Human can't see you. [end if] The Human's cutting board and a napkin holder lie on the surface.". Understand "kitchen" or "kitchen table" as Kitchen Table Top.
 
-The Cutting Board is a thing in the Kitchen Table Top. "Freshly cut Green Onions lie on the Cutting Board."
+The Cutting Board is a thing in the Kitchen Table Top. The description of the Cutting Board is "Freshly cut Green Onions lie on the Cutting Board.".
 
-The Green Onions is a thing on the Cutting Board. The Green Onions are edible.
+The Green Onions is a thing on the Cutting Board. The Green Onions are edible. THe description of the Green Onions is "Circular, chopped green onions ready to be spread on a dish. They gleam like they hold special, secret powers."
 
 A person can be armful or armless. A person is usually armless. 
 
@@ -119,21 +120,24 @@ Hiding behind is an action applying to one thing. Understand "hide behind [somet
 Instead of hiding behind:
 	say "You roll behind [the noun]. Now the Human can't see you.";
 	now the player is hidden.
+
 Check hiding behind:
 	say "The Human can see you! Quick [bold type] hide behind something!".
 	
-Every turn:
+Test HGA with "hide behind napkin holder/eat green onions/take chopsticks."
+	
+[Every turn:
 	let current location be the location of the Human;
 	let next location be a random room which is adjacent to the current location;
 	if the Human is visible, say "The Human goes towards the [the next location].";
 	move the Human to next location;
 	
-[Every turn:
+Every turn:
 	let current location be the location of the Human;
 	let next location be a random room which is adjacent to the current location;
 	if the next location of the Human is the location of the player, say "Quick! The Human is coming back from [the current location].".]
 
-The Napkin Holder is a thing in the Kitchen Table Top. 
+The Napkin Holder is a thing in the Kitchen Table Top. Understand "napkin" or "holder" as the Napkin Holder. The description of the Napkin Holder is "A large, wooden structure filled with napkins."
 
 Instead of taking the Napkin Holder:
 	say "You grab the Napkin Holder and pull, but it is too big and too heavy.".
@@ -141,13 +145,94 @@ Instead of taking the Napkin Holder:
 Instead of pushing the Napkin Holder:
 	say "You push against it, but it doesn't move. [italic type]'It would probably be too much of a hassle anyway,'[roman type]you think.".
 
-The Sink is east of the Kitchen Table Top. 
+The Sink is east of the Kitchen Table Top. The description of the Sink is "A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A sponge floats on top of the water right in front of you."
 
-The Sponge is a thing in the Sink.
+Every turn:
+	if the player is in the Sink:
+		now the player is hidden.
+Every turn:	
+	if the player is in the Bowl:
+		now the player is hidden.
+Every turn:
+	if the player is in the Plate:
+		now the player is hidden.
 
-The Plate is east of the Sink.
+Every turn:
+	if the player is in the Kitchen Table Top:
+		now the player is nothidden.
+		
+Every turn:
+	if the player is in the Cabinet:
+		now the player is nothidden.
 
-The Bowl is east of the Plate.
+The Sponge is an enterable supporter. It is in the Sink. The description of the Sponge is "A floating sponge usually used for washing dishes, but can also be used for other things."
+
+Getting on is an action applying to one thing. Understand "get on [something]" as getting on.
+
+Understand "get on [something]" as entering.
+
+Instead of getting on the Sponge:
+	say "You roll onto the Sponge. It dips a little, but stays afloat and seem steady for your journey across the sink.";
+	now the player is on the Sponge.
+
+Getting out of is an action applying to one thing. Understand "get out of [something]" as getting out of.
+
+Carry out getting out of something:
+	try exiting instead.
+
+V is a thing in the Sink. It is undescribed.
+W is a thing in the Sink. It is undescribed.
+
+Instead of getting out of the Sponge:
+	if the player has V:
+		say "You finally reach the other side, and see a plate and a bowl sitting next to each other. You roll off the sponge and onto the plate.";
+		move the player to the Plate;
+	if the player has W:
+		say "You get out of the Sink and are back on the Kitchen Table Top[paragraph break]Remember, the Human is still wandering around!.";
+		move the player to the Kitchen Table Top.
+		
+[Rule for printing the name of the V while taking inventory:
+	omit the "V" in listing.]
+
+Every turn:
+	if the player has the V:
+		if the player is in the Plate:
+			move the V to the Sink.
+					
+Every turn:
+	if the player has the W:
+		if the player is in the Kitchen Table Top:
+			move the W to the Sink.
+
+Instead of going east:
+	if the player is in the Sink:
+		if the player is on the Sponge:
+			if the player has the Chopsticks:
+				say "You row stealthly across the Sink to the other side of the table.";
+				move the V to the player;
+				continue the action;
+			otherwise:
+				say "You hop on the Sponge, but have nothing to propel yourself with. Maybe you need something to act as a paddle.";
+		if the player is not on the Sponge:
+			say "You plop into the water and slowly sink to the bottom.";
+			end the story finally.
+			
+Instead of going west:
+	if the player is in the Plate:
+		if the player is on the Sponge:
+			if the player has the Chopsticks:
+				say "You row stealthly across the Sink to the other side of the table.";
+				move the W to the player;
+				continue the action;
+			otherwise:
+				say "You hop on the Sponge, but have nothing to propel yourself with. Maybe you need something to act as a paddle.";
+		if the player is not on the Sponge:
+			say "You plop into the water and slowly sink to the bottom.";
+			end the story finally.
+
+The Plate is east of the Sink. 
+
+The Bowl is east of the Plate. The description of the Bowl is "You roll and plop yourself into a pool of rice. You sink a little into the rice to camouflage yourself from the Human."
 
 The Rice is a thing in the Bowl. It is edible. "An extremely sticky rice, almost as sticky as glue."
 
@@ -160,11 +245,13 @@ The Window Sill is in the Window. It is a supporter. Understand "sill" as the Wi
 
 Leaning is an action applying to two things. Understand "lean [something] against [something]" as leaning.
 
+Understand "put [something] on [something]" as leaning.
+
 The Cabinet is west of the Kitchen Table Top. "The Cabinet is open. Boxes and jars of food fill the Cabinet."
 
 The Wooden Spatula is in the Cabinet. It is a supporter. It is not fixed in place. Understand "spatula" or "spoon" as the Wooden Spatula. 
 
-The Dinner Table is south of the Sink. 
+The Dinner Table is south of the Sink. The description of the Dinner Table is "A place you do not want to be."
 
 An every turn rule:
 	if the Human is visible:
