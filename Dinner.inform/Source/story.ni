@@ -33,7 +33,7 @@ now.".
 
 The Chopsticks is a thing. It is in the Steamer. The description of the Chopsticks is "Two wooden sticks used as a utensil to eat or cook."
 
-The Crack is a container. The description of the Crack is "A small opening in the cover. Maybe this is your time to escape." It is openable and closed. It is in the Steamer. It is undescribed.
+The Crack is a container. The description of the Crack is "A small opening in the cover. You just need something to nudge the Crack open wider." It is openable and closed. It is in the Steamer. It is undescribed.
 
 The X is a container in the Steamer. It is undescribed.
 
@@ -60,40 +60,11 @@ Instead of going down:
 			now the player is hidden;
 			move the player to the Kitchen Table Top.
 
-[Instead of climbing the Steamed Buns:
-	if the Crack is closed:
-		say "You climb on top of the Steamed Bun next to you, but the cover is still closed, preventing you from escaping.";
-	If the Crack is open:
-		say "You climb out of the Steamer and fall on the Kitchen Table Top.";
-		now the player is hidden;
-		move the player to the Kitchen Table Top.
-		
-Understand "get on" or "get on top of" or "climb on top of" or "climb on" as climbing.]
-
 Test STM with "put chopsticks in Crack/push chopsticks/down.".
 
 A Steamed Buns is a thing. It is in the Steamer. It is undescribed. It is edible. Understand "bun" or "buns" or "steamed" as the Steamed Buns. The description of the Steamed Buns is "You look around the steamer and see your fellow steamed buns just as scared as you are."
 
-[A thing has a number called numberofbuns. The numberofbuns of the Steamed Buns is five.]
-
 The Human is a woman. Understand "old" or "Chinese" or "girl" or "woman" or "her" or "she" or "human" as the Human. The Human is in the Kitchen Table Top. "The Human is super hungry, and she waits for the steamed buns to finish cooking." The description is "An old, Chinese woman."
-
-[A person can be hungry or not hungry. A person is usually hungry.
-The Human has a number called hunger-level. The hunger-level of the Human is 7.
-
-Every 10 turns:
-	if the humger-level of the Human is greater than 1:
-		
-	decrease the hunger-level of the Human by 1;
-	decrease the number of Steamed Buns by 1;
-	say "'Mhmmmm, yummy,' the Human says, 'I can't wait for the rest of the buns to be ready.".
-
-Every turn:
-	if the location of The Human is not the location of the player:
-		let the way be the best route from the location of The Human to the location of the player;
-		try The Human going the way;
-	otherwise:
-		say "'I'm hungry,' The Human says.".]
 
 The Kitchen Table Top is below the Steamer. "[if unvisited] You land on the granite surface behind the Cover, so the Human can't see you. [end if] The Human's cutting board and a napkin holder lie on the surface.". Understand "kitchen" or "kitchen table" as Kitchen Table Top.
 
@@ -111,6 +82,7 @@ Instead of taking something:
 	if the player is armless:
 		say "You try, but you don't have any hands yet. Try [bold type] pushing something.";
 	if the player is armful:
+		say "You take [the noun] with your newly grown arms.";
 		continue the action.
 
 A person can be hidden or nothidden. A person is usually nothidden. 
@@ -156,14 +128,6 @@ Every turn:
 Every turn:
 	if the player is in the Plate:
 		now the player is hidden.
-
-Every turn:
-	if the player is in the Kitchen Table Top:
-		now the player is nothidden.
-		
-Every turn:
-	if the player is in the Cabinet:
-		now the player is nothidden.
 
 The Sponge is an enterable supporter. It is in the Sink. The description of the Sponge is "A floating sponge usually used for washing dishes, but can also be used for other things."
 
@@ -249,7 +213,86 @@ Understand "put [something] on [something]" as leaning.
 
 The Cabinet is west of the Kitchen Table Top. "The Cabinet is open. Boxes and jars of food fill the Cabinet."
 
-The Wooden Spatula is in the Cabinet. It is a supporter. It is not fixed in place. Understand "spatula" or "spoon" as the Wooden Spatula. 
+The Boxes is a thing in the Cabinet. Understand "box" as boxes. The description of the Boxes is "Heavy, stacked boxes containing packets of noodles and other foods."
+
+Instead of taking the Boxes:
+	say "You grab the Boxes and pull, but it is too big and too heavy.".
+
+Instead of pushing the Boxes:
+	say "You push against it, but it doesn't move. [italic type]'It would probably be too much of a hassle anyway,'[roman type]you think.".
+	
+The jars is a thing in the Cabinet. Understand "jar" as Jars. The description of the Jars is "Tall jars filled with various sauces and seasonings.".
+
+Instead of taking the Jars:
+	say "You grab the Jars and pull, but it is too big and too heavy.".
+
+Instead of pushing the Jars:
+	say "You push against it, but it doesn't move. [italic type]'It would probably be too much of a hassle anyway,'[roman type]you think.".
+	
+The Utensil Crock is a container in the Cabinet. It is open. Understand "utensil" or "crock" as the Utensil Crock. The description of the Utensil Crock is "A tall, cylindrical tool holder that houses cooking utensils. The Spatula, B, and C are in the Holder."
+
+B is a thing in the Utensil Crock.
+C is a thing in the Utensil Crock.
+
+Instead of taking the Utensil Crock:
+	say "You grab the Utensil Crock and pull, but it is too big and too heavy.".
+
+Instead of pushing the Utensil Crock:
+	say "You push against it, but it doesn't move. [italic type]'It would probably be too much of a hassle anyway,'[roman type]you think.".
+	
+The Spatula is in the Utensil Crock. It is a supporter. It is not fixed in place. Understand "spoon" as the Spatula. 
+
+Glueing is an action applying to two things. Understand "glue [something] and [something]" or "glue [something] and [something] together" as glueing.
+
+Instead of glueing:
+	if the player has the Rice:
+		say "You paste [the noun] and [the second noun] together, creating a sturdy structure.";
+		continue the action;
+	otherwise:
+		say "You put [the noun] on [the noun], but they just slide apart. Maybe you need to glue them together.".
+			
+The glueing action has an object called the Contraption.
+	
+Check glueing:
+	if Contraption is nothing:
+		say "You can't glue [the noun] and [the second noun] together into anything useful.[line break]Try another combination of things.";
+		stop the action.
+		
+Carry out glueing: 
+	say "You glue together [the noun] and [the second noun].";
+	remove the noun from play;
+	remove the second noun from play;
+	move the Contraption to the player.
+
+Report glueing:
+	say "You now have a [a Contraption]."
+
+Setting action variables for glueing: 
+	let X be a list of objects;
+	add the noun to X;
+	add the second noun to X;
+	sort X; 
+	repeat through the Table of Utensils: 
+		let Y be the parts list entry; 
+		sort Y; 
+		if X is Y: 
+			now the Contraption is the results entry.
+			
+Table of Utensils
+Parts List	Results
+{Spatula, B}	SpatulaB
+{Spatula, C}	SpatulaC
+{B, C}	BC
+{Spatula, B, C}	Ladder Thingy
+{SpatulaB, C}	Ladder Thingy
+{SpatulaC, B}	Ladder Thingy
+{BC, Spatula}	Ladder Thingy
+
+The SpatulaB is an object. The description of the SpatulaB is "Spatula and B… Need anything else?"
+The SpatulaC is an object. The description of the SpatulaC is "Spatula and C… Need anything else?"
+The BC is an object. The description of the BC is "B and C… Need anything else?"
+
+The Ladder Thingy is a thing.
 
 The Dinner Table is south of the Sink. The description of the Dinner Table is "A place you do not want to be."
 
