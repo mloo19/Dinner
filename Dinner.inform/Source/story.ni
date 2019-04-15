@@ -21,7 +21,7 @@ Understand "move [something]" or "nudge [something]" as pushing.
 
 The Steamer is a room. The description of the Steamer is "A round, bamboo steamer resting on a pot of boiling water. The Human's chopsticks rest in the steamer, and five other steamed buns are huddled next to you. The cover is on the steamer, but you notice light coming through a crack in the top."
 
-Steve is a man in the Steamer. “Steve is a fellow steamed bun huddled in the corner of the Steamer trying not to be eaten.” The description is “A white fluffy steamed bun with great advice.” 
+Steve is a man in the Steamer. “Steve is a fellow steamed bun huddled in the corner of the Steamer also trying not to be eaten.” The description is “A white fluffy steamed bun with great advice.” 
 
 Talking to is an action applying to one visible thing.
 Understand "talk to [someone]" or “converse with [someone]” as talking to.
@@ -38,6 +38,9 @@ The Crack is a container. The description of the Crack is "A small opening in th
 The X is a container in the Steamer. It is undescribed.
 
 The Cover is a thing in the Steamer. It is undescribed. Understand "lid" or "top" as cover. The description of the Cover is "A bamboo lid that keeps the steam and heat in the steamer."
+
+Instead of pushing the Crack:
+	say "You try, but you can't quite reach that high. Maybe use something in the Steamer to help you open the Crack wider."
 
 Instead of inserting the Chopsticks into the Crack:
 	say "You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do push the chopsticks to get the cover off.";
@@ -66,9 +69,15 @@ A Steamed Buns is a thing. It is in the Steamer. It is undescribed. It is edible
 
 The Human is a woman. Understand "old" or "Chinese" or "girl" or "woman" or "her" or "she" or "human" as the Human. The Human is in the Kitchen Table Top. "The Human is super hungry, and she waits for the steamed buns to finish cooking." The description is "An old, Chinese woman."
 
-The Kitchen Table Top is below the Steamer. "[if unvisited] You land on the granite surface behind the Cover, so the Human can't see you. [end if] The Human's cutting board and a napkin holder lie on the surface.". Understand "kitchen" or "kitchen table" as Kitchen Table Top.
+The Kitchen Table Top is below the Steamer. "[if unvisited] You land on the granite surface behind the Cover, so the Human can't see you. [end if] The Human's Cutting Board and a Napkin Holder lie on the surface.[paragraph break]The Sink is to the east, and the Cabinet is to the West.". Understand "kitchen" or "kitchen table" as Kitchen Table Top.
 
-The Cutting Board is a thing in the Kitchen Table Top. The description of the Cutting Board is "Freshly cut Green Onions lie on the Cutting Board.".
+The Cutting Board is a thing in the Kitchen Table Top. Understand "cutting" or "board" as the Cutting Board. The description of the Cutting Board is "Freshly cut Green Onions lie on the Cutting Board.".
+
+Instead of taking the Cutting Board:
+	say "You grab the Cutting Board and pull, but it is too big and too heavy.".
+
+Instead of pushing the Cutting Board:
+	say "You push against it, but it doesn't move. [italic type]'It would probably be too much of a hassle anyway,'[roman type]you think.".
 
 The Green Onions is a thing on the Cutting Board. The Green Onions are edible. THe description of the Green Onions is "Circular, chopped green onions ready to be spread on a dish. They gleam like they hold special, secret powers."
 
@@ -94,7 +103,7 @@ Instead of hiding behind:
 	now the player is hidden.
 
 Check hiding behind:
-	say "The Human can see you! Quick [bold type] hide behind something!".
+	say "The Human is coming! Quick [bold type] hide behind something!".
 	
 Test HGA with "hide behind napkin holder/eat green onions/take chopsticks."
 	
@@ -111,13 +120,15 @@ Every turn:
 
 The Napkin Holder is a thing in the Kitchen Table Top. Understand "napkin" or "holder" as the Napkin Holder. The description of the Napkin Holder is "A large, wooden structure filled with napkins."
 
+The Napkins are a thing in the Kitchen Table Top. It is undescribed. The description of the Napkins is "Plain old napkins. Nothing special here."
+
 Instead of taking the Napkin Holder:
 	say "You grab the Napkin Holder and pull, but it is too big and too heavy.".
 
 Instead of pushing the Napkin Holder:
 	say "You push against it, but it doesn't move. [italic type]'It would probably be too much of a hassle anyway,'[roman type]you think.".
 
-The Sink is east of the Kitchen Table Top. The description of the Sink is "A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A sponge floats on top of the water right in front of you."
+The Sink is east of the Kitchen Table Top. The description of the Sink is "A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.[paragraph break] The Kitchen Table Top is to the west, and the Plate is to the east."
 
 Every turn:
 	if the player is in the Sink:
@@ -129,7 +140,7 @@ Every turn:
 	if the player is in the Plate:
 		now the player is hidden.
 
-The Sponge is an enterable supporter. It is in the Sink. The description of the Sponge is "A floating sponge usually used for washing dishes, but can also be used for other things."
+The Sponge is an enterable supporter. It is in the Sink. The description of the Sponge is "A floating sponge usually used for washing dishes, but can also be used for other things. Try [bold type] getting on it."
 
 Getting on is an action applying to one thing. Understand "get on [something]" as getting on.
 
@@ -194,24 +205,49 @@ Instead of going west:
 			say "You plop into the water and slowly sink to the bottom.";
 			end the story finally.
 
-The Plate is east of the Sink. 
+The Plate is east of the Sink. The description of the Plate is "A Char Siu-filled plate. You see crumbs near the middle of the Plate and a smear of sauce. Your roll behind the Char Siu pile, so the Human doesn't see you.[paragraph break]The Sink is to the west, and you see a bowl to the east."
 
-The Bowl is east of the Plate. The description of the Bowl is "You roll and plop yourself into a pool of rice. You sink a little into the rice to camouflage yourself from the Human."
+The Char Siu is a thing. Understand "Char" or "Siu" as the Char Siu. It is edible. The description is "Chinese BBQ pork."
+
+Instead of eating the Char Siu:
+	say "You nibble a little piece, but decide not to eat the rest because you don't want the Human to notice a huge piece is gone."
+	
+Instead of taking the Char Siu:
+	say "You reach out to touch one, but notice it leaves a residue on your hands, so you decide not to take it with you."
+		
+The Crumbs are a thing. Understand "crumb" as the Crumbs. It is edible. The description is "White crumbs that look like parts of a steamed bun. You notice something some sauce smeared next to the crumbs in very small handwriting."
+
+Instead of taking the Crumbs:
+	say "You take the remains of your fellow steamed bun, hoping she will bring you good luck on the rest of your journey.";
+	continue the action.
+	
+Instead of eating the Crumbs:
+	say "Your stomach turns at the thought of eating part of your fellow steamed bun."
+
+The Sauce is a thing. Understand "smear" or "smear of sauce" as the Sauce. The description is "The Sauce seems to say 'Goal: Window[paragraph break]Green Onions = arms.[paragraph break]Build ... Window Sill.' You struggle to read the last part as it got blurred out."
+
+Instead of taking the Sauce:
+	say "You think about it for a little while and decide you don't want to leave any 'footprints' to help the Human find you.".
+	
+Instead of eating the Sauce:
+	say "Tastes like BBQ. Nothing special.".
+
+The Bowl is east of the Plate. The description of the Bowl is "You roll and plop yourself into a pool of rice. You sink a little into the rice to camouflage yourself from the Human.[paragraph break]The Plate is to the west. You see the Window above you, but you are too short to reach your freedom.".
 
 The Rice is a thing in the Bowl. It is edible. "An extremely sticky rice, almost as sticky as glue."
 
 Instead of eating the Rice:
 	say "You eat some, but it's so sticky that your mouth is almost glued shut. You wouldn't want to eat that again."
 
-The Window is above the Bowl. "The Window is so high. It is open, letting the breeze from the outside flow through the kitchen. The beautiful blue sky and your freedom lie just on the other side."
+The Window is above the Bowl. "The Window is so high. It is open, letting the breeze from the outside flow through the kitchen. The beautiful blue sky and your freedom lie just on the other side.[paragraph break]The Bowl is below you."
 
-The Window Sill is in the Window. It is a supporter. Understand "sill" as the Window Sill. The description of the Window Sill is "A flat, white surface just beneath the Window."
+The Window Sill is in the Window. It is a supporter. Understand "sill" as the Window Sill. The description of the Window Sill is "A flat, white surface just beneath the Window.".
 
 Leaning is an action applying to two things. Understand "lean [something] against [something]" as leaning.
 
 Understand "put [something] on [something]" as leaning.
 
-The Cabinet is west of the Kitchen Table Top. "The Cabinet is open. Boxes and jars of food fill the Cabinet."
+The Cabinet is west of the Kitchen Table Top. "The Cabinet is open. Boxes and jars of food fill the Cabinet.[paragraph break]The Kitchen Table Top is to the east."
 
 The Boxes is a thing in the Cabinet. Understand "box" as boxes. The description of the Boxes is "Heavy, stacked boxes containing packets of noodles and other foods."
 
@@ -229,10 +265,7 @@ Instead of taking the Jars:
 Instead of pushing the Jars:
 	say "You push against it, but it doesn't move. [italic type]'It would probably be too much of a hassle anyway,'[roman type]you think.".
 	
-The Utensil Crock is a container in the Cabinet. It is open. Understand "utensil" or "crock" as the Utensil Crock. The description of the Utensil Crock is "A tall, cylindrical tool holder that houses cooking utensils. The Spatula, B, and C are in the Holder."
-
-B is a thing in the Utensil Crock.
-C is a thing in the Utensil Crock.
+The Utensil Crock is a container in the Cabinet. It is open. Understand "utensil" or "crock" as the Utensil Crock. The description of the Utensil Crock is "A tall, cylindrical tool holder that houses cooking utensils. The Spatula, Toothpicks, Tongs, Whisk, and Wooden Spoon are in the Holder."
 
 Instead of taking the Utensil Crock:
 	say "You grab the Utensil Crock and pull, but it is too big and too heavy.".
@@ -240,7 +273,15 @@ Instead of taking the Utensil Crock:
 Instead of pushing the Utensil Crock:
 	say "You push against it, but it doesn't move. [italic type]'It would probably be too much of a hassle anyway,'[roman type]you think.".
 	
-The Spatula is in the Utensil Crock. It is a supporter. It is not fixed in place. Understand "spoon" as the Spatula. 
+The Spatula is in the Utensil Crock. It is a thing. It is undescribed. The description is "A sturdy, wooden spatula."
+
+The Toothpicks is a thing in the Utensil Crock. It is undescribed. The description is "Little wooden sticks."
+
+The Wooden Spoon is a thing in the Utensil Crock. It is undescribed. Understand "spoon" as the Wooden Spoon. The description is "A straight, wooden spoon.".
+
+The Tongs are a thing in the Utensil Crock. It is undescribed. The description is "Metal grabbers that are difficult for a small bun like you to open and close."
+
+The Whisk is a thing in the Utensil Crock. It is undescribed. The description is "A mixer with many different slots between looped wires."
 
 Glueing is an action applying to two things. Understand "glue [something] and [something]" or "glue [something] and [something] together" as glueing.
 
@@ -280,19 +321,19 @@ Setting action variables for glueing:
 			
 Table of Utensils
 Parts List	Results
-{Spatula, B}	SpatulaB
-{Spatula, C}	SpatulaC
-{B, C}	BC
-{Spatula, B, C}	Ladder Thingy
-{SpatulaB, C}	Ladder Thingy
-{SpatulaC, B}	Ladder Thingy
-{BC, Spatula}	Ladder Thingy
+{Spatula, Toothpicks}	Spatula-Toothpicks Thing
+{Spatula, Wooden Spoon}	Spatula-Wooden Spoon Thing
+{Toothpicks, Wooden Spoon}	Toothpicks-Wooden Spoon Thing
+{Spatula, Toothpicks, Wooden Spoon}	Ladder Thing
+{Spatula-Toothpicks Thing, Wooden Spoon}	Ladder Thing
+{Spatula-Wooden Spoon Thing, Toothpicks}	Ladder Thing
+{Toothpicks-Wooden Spoon Thing, Spatula}	Ladder Thing
 
-The SpatulaB is an object. The description of the SpatulaB is "Spatula and B… Need anything else?"
-The SpatulaC is an object. The description of the SpatulaC is "Spatula and C… Need anything else?"
-The BC is an object. The description of the BC is "B and C… Need anything else?"
+The Spatula-Toothpicks Thing is an object. The description of the Spatula-Toothpicks Thing is "Spatula and Toothpicks… Need anything else?"
+The Spatula-Wooden Spoon Thing is an object. The description of the Spatula-Wooden Spoon Thing is "Spatula and Wooden Spoon… Need anything else?"
+The Toothpicks-Wooden Spoon Thing is an object. The description of the Toothpicks-Wooden Spoon Thing is "Toothpicks and Wooden Spoon… Need anything else?"
 
-The Ladder Thingy is a thing.
+The Ladder Thing is a thing. The description of the Ladder Thing is "A combination of the Spatula, Toothpicks, and Wooden Spoon that mimic a ladder to help you escape."
 
 The Dinner Table is south of the Sink. The description of the Dinner Table is "A place you do not want to be."
 

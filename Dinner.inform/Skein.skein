@@ -11,12 +11,12 @@ You wake up in a steaming hot bath. Suddenly, a huge hand lifts the ceiling of t
 
 Dinner
 An Interactive Fiction by mloo19
-Release 1 / Serial number 190411 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190415 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Steamer
 A round, bamboo steamer resting on a pot of boiling water. The Human's chopsticks rest in the steamer, and five other steamed buns are huddled next to you. The cover is on the steamer, but you notice light coming through a crack in the top.
 
-Steve is a fellow steamed bun huddled in the corner of the Steamer trying not to be eaten.
+Steve is a fellow steamed bun huddled in the corner of the Steamer also trying not to be eaten.
 
 You can also see a Chopsticks here.
 
@@ -32,6 +32,7 @@ You can also see a Chopsticks here.
             <child nodeId="node-1499"></child>
             <child nodeId="node-1496"></child>
             <child nodeId="node-1494"></child>
+            <child nodeId="node-1600"></child>
             <child nodeId="node-1493"></child>
             <child nodeId="node-1531"></child>
             <child nodeId="node-1563"></child>
@@ -204,6 +205,25 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 Troy looks around nervously. "I heard the last successful steamed bun was able to escape after eating some green onion from the cutting board. But that was years ago, and you have to figure out how to get out of the steamer."
 
 After hearing this, you decide against talking any further with Troy right now.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1600">
+        <command xml:space="preserve">talk to steve</command>
+        <result xml:space="preserve">"Hi, there," you say.
+
+"Hi," he replies nervously.
+
+"How long have you been in here," you ask.
+
+"Long enough to know what's about to happen," Steve replies. 
+
+"Do you know how to get out of here?" you ask.
+
+Steve looks around nervously. "I heard the last successful steamed bun was able to escape after eating some green onion from the cutting board. But that was years ago, and you have to figure out how to get out of the steamer."
+
+After hearing this, you decide against talking any further with Steve right now.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
