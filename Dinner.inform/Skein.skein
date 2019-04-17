@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 
-<Skein rootNode="node-1486">
+<Skein rootNode="node-1311">
     <generator>Inform Mac Client (Inform version 1.65/6.33/6M62)</generator>
-    <item nodeId="node-1486">
+    <item nodeId="node-1311">
         <command xml:space="preserve">Dinner</command>
         <result xml:space="preserve">
 
@@ -11,7 +11,7 @@ You wake up in a steaming hot bath. Suddenly, a huge hand lifts the ceiling of t
 
 Dinner
 An Interactive Fiction by mloo19
-Release 1 / Serial number 190415 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 190416 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
 
 Steamer
 A round, bamboo steamer resting on a pot of boiling water. The Human's chopsticks rest in the steamer, and five other steamed buns are huddled next to you. The cover is on the steamer, but you notice light coming through a crack in the top.
@@ -22,68 +22,923 @@ You can also see a Chopsticks here.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1539"></child>
-            <child nodeId="node-1518"></child>
-            <child nodeId="node-1516"></child>
-            <child nodeId="node-1512"></child>
-            <child nodeId="node-1509"></child>
-            <child nodeId="node-1504"></child>
-            <child nodeId="node-1501"></child>
-            <child nodeId="node-1499"></child>
-            <child nodeId="node-1496"></child>
-            <child nodeId="node-1494"></child>
-            <child nodeId="node-1600"></child>
-            <child nodeId="node-1493"></child>
-            <child nodeId="node-1531"></child>
-            <child nodeId="node-1563"></child>
-            <child nodeId="node-1488"></child>
-            <child nodeId="node-1487"></child>
+        <children><child nodeId="node-1446"></child>
+            <child nodeId="node-1445"></child>
+            <child nodeId="node-1443"></child>
+            <child nodeId="node-1439"></child>
+            <child nodeId="node-1436"></child>
+            <child nodeId="node-1430"></child>
+            <child nodeId="node-1427"></child>
+            <child nodeId="node-1425"></child>
+            <child nodeId="node-1422"></child>
+            <child nodeId="node-1420"></child>
+            <child nodeId="node-1419"></child>
+            <child nodeId="node-1418"></child>
+            <child nodeId="node-1417"></child>
+            <child nodeId="node-1391"></child>
+            <child nodeId="node-1386"></child>
+            <child nodeId="node-1313"></child>
+            <child nodeId="node-1312"></child>
         </children>
     </item>
-    <item nodeId="node-1487">
+    <item nodeId="node-1312">
         <command xml:space="preserve">x human</command>
         <result xml:space="preserve">An old, Chinese woman.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1488">
-        <command xml:space="preserve">x buns</command>
-        <result xml:space="preserve">You see nothing special about the Steamed Buns.
+    <item nodeId="node-1313">
+        <command xml:space="preserve">x chopsticks</command>
+        <result xml:space="preserve">Two wooden sticks used as a utensil to eat or cook.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1489"></child>
+        <children><child nodeId="node-1314"></child>
         </children>
     </item>
-    <item nodeId="node-1489">
-        <command xml:space="preserve">climb buns</command>
-        <result xml:space="preserve">You climb on top of the Steamed Bun next to you, but the cover is still closed, preventing you from escaping.
+    <item nodeId="node-1314">
+        <command xml:space="preserve">pick up chopsticks</command>
+        <result xml:space="preserve">You try, but you don't have any hands yet. Try  pushing something.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1490"></child>
+        <children><child nodeId="node-1315"></child>
         </children>
     </item>
-    <item nodeId="node-1490">
+    <item nodeId="node-1315">
+        <command xml:space="preserve">push chopsticks</command>
+        <result xml:space="preserve">You push the Chopsticks around and accidentally poke one of the other steamed buns!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1316"></child>
+        </children>
+    </item>
+    <item nodeId="node-1316">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">You try to roll out, but the Cover is still on.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1317"></child>
+        </children>
+    </item>
+    <item nodeId="node-1317">
+        <command xml:space="preserve">pushcover</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1318"></child>
+        </children>
+    </item>
+    <item nodeId="node-1318">
+        <command xml:space="preserve">push cover</command>
+        <result xml:space="preserve">Nothing obvious happens.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1319"></child>
+        </children>
+    </item>
+    <item nodeId="node-1319">
+        <command xml:space="preserve">push steve</command>
+        <result xml:space="preserve">Steve might not like that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1320"></child>
+        </children>
+    </item>
+    <item nodeId="node-1320">
+        <command xml:space="preserve">x crack</command>
+        <result xml:space="preserve">A small opening in the cover. You just need something to nudge the Crack open wider.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1321"></child>
+        </children>
+    </item>
+    <item nodeId="node-1321">
+        <command xml:space="preserve">push chopsticks</command>
+        <result xml:space="preserve">You push the Chopsticks around and accidentally poke one of the other steamed buns!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1322"></child>
+        </children>
+    </item>
+    <item nodeId="node-1322">
+        <command xml:space="preserve">push chopsticks the other way</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1323"></child>
+        </children>
+    </item>
+    <item nodeId="node-1323">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Steamer
+A round, bamboo steamer resting on a pot of boiling water. The Human's chopsticks rest in the steamer, and five other steamed buns are huddled next to you. The cover is on the steamer, but you notice light coming through a crack in the top.
+
+Steve is a fellow steamed bun huddled in the corner of the Steamer also trying not to be eaten.
+
+You can also see a Chopsticks here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1324"></child>
+        </children>
+    </item>
+    <item nodeId="node-1324">
         <command xml:space="preserve">put chopsticks in crack</command>
         <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do push the chopsticks to get the cover off.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1491"></child>
+        <children><child nodeId="node-1325"></child>
         </children>
     </item>
-    <item nodeId="node-1491">
+    <item nodeId="node-1325">
+        <command xml:space="preserve">push chopsticks</command>
+        <result xml:space="preserve">You roll onto the end of the chopsticks, making the crack wider. After a couple more seconds, the cover is off, and it falls to the Kitchen Table Top. Now you can go down and escape!
+
+The Human turns to see what the noise was.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1326"></child>
+        </children>
+    </item>
+    <item nodeId="node-1326">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">Kitchen Table Top
+ You land on the granite surface behind the Cover, so the Human can't see you.  The Human's Cutting Board and a Napkin Holder lie on the surface. After looking around, you see a Window, but it is elevated. You need to figure out a way to get out of the Window.
+
+The Sink is to the east, and the Cabinet is to the West.
+
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+You can also see a Chopsticks, a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1327"></child>
+        </children>
+    </item>
+    <item nodeId="node-1327">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Sink
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+You can see a Sponge here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1328"></child>
+        </children>
+    </item>
+    <item nodeId="node-1328">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Kitchen Table Top
+ The Human's Cutting Board and a Napkin Holder lie on the surface. After looking around, you see a Window, but it is elevated. You need to figure out a way to get out of the Window.
+
+The Sink is to the east, and the Cabinet is to the West.
+
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+You can also see a Chopsticks, a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1329"></child>
+        </children>
+    </item>
+    <item nodeId="node-1329">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Sink
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+You can see a Sponge here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1330"></child>
+        </children>
+    </item>
+    <item nodeId="node-1330">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">You plop into the water and slowly sink to the bottom.
+
+
+
+    *** The End ***
+
+
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1331"></child>
+        </children>
+    </item>
+    <item nodeId="node-1331">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Sink
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1332"></child>
+        </children>
+    </item>
+    <item nodeId="node-1332">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Kitchen Table Top
+ The Human's Cutting Board and a Napkin Holder lie on the surface. After looking around, you see a Window, but it is elevated. You need to figure out a way to get out of the Window.
+
+The Sink is to the east, and the Cabinet is to the West.
+
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+You can also see a Chopsticks, a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1333"></child>
+        </children>
+    </item>
+    <item nodeId="node-1333">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cabinet
+The Cabinet is open. Boxes and jars of food fill the Cabinet. There is also a Utensil Crock filled with various tools.
+
+The Kitchen Table Top is to the east.
+
+You can see a Boxes, a jars and an Utensil Crock here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1334"></child>
+        </children>
+    </item>
+    <item nodeId="node-1334">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen Table Top
+ The Human's Cutting Board and a Napkin Holder lie on the surface. After looking around, you see a Window, but it is elevated. You need to figure out a way to get out of the Window.
+
+The Sink is to the east, and the Cabinet is to the West.
+
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+You can also see a Chopsticks, a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1335"></child>
+        </children>
+    </item>
+    <item nodeId="node-1335">
+        <command xml:space="preserve">x cutting board</command>
+        <result xml:space="preserve">Freshly cut Green Onions lie on the Cutting Board.
+
+On the Cutting Board is a Green Onions.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1336"></child>
+        </children>
+    </item>
+    <item nodeId="node-1336">
+        <command xml:space="preserve">x green onions</command>
+        <result xml:space="preserve">Circular, chopped green onions ready to be spread on a dish. They gleam like they hold special, secret powers.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1337"></child>
+        </children>
+    </item>
+    <item nodeId="node-1337">
+        <command xml:space="preserve">eat green onions</command>
+        <result xml:space="preserve">You roll over the Cutting Board and eat a green onion, and then you feel a tingling in your body. Suddenly, you watch as two arms grow out of your body.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1338"></child>
+        </children>
+    </item>
+    <item nodeId="node-1338">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Sink
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+You can see a Sponge here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1339"></child>
+        </children>
+    </item>
+    <item nodeId="node-1339">
+        <command xml:space="preserve">get on sponge</command>
+        <result xml:space="preserve">You roll onto the Sponge. It dips a little, but stays afloat and seem steady for your journey across the sink.
+
+Sink (on the Sponge)
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1340"></child>
+        </children>
+    </item>
+    <item nodeId="node-1340">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Kitchen Table Top (on the Sponge)
+ The Human's Cutting Board and a Napkin Holder lie on the surface. After looking around, you see a Window, but it is elevated. You need to figure out a way to get out of the Window.
+
+The Sink is to the east, and the Cabinet is to the West.
+
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+You can also see a Chopsticks, a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1341"></child>
+        </children>
+    </item>
+    <item nodeId="node-1341">
+        <command xml:space="preserve">pick up chopsticks</command>
+        <result xml:space="preserve">You take the Chopsticks with your newly grown arms.
+
+Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1342"></child>
+        </children>
+    </item>
+    <item nodeId="node-1342">
+        <command xml:space="preserve">take napkin holder</command>
+        <result xml:space="preserve">You grab the Napkin Holder and pull, but it is too big and too heavy.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1343"></child>
+        </children>
+    </item>
+    <item nodeId="node-1343">
+        <command xml:space="preserve">put chopsticks in napkin holder</command>
+        <result xml:space="preserve">That can't contain things.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1344"></child>
+        </children>
+    </item>
+    <item nodeId="node-1344">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cabinet (on the Sponge)
+The Cabinet is open. Boxes and jars of food fill the Cabinet. There is also a Utensil Crock filled with various tools.
+
+The Kitchen Table Top is to the east.
+
+You can see a Boxes, a jars and an Utensil Crock here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1345"></child>
+        </children>
+    </item>
+    <item nodeId="node-1345">
+        <command xml:space="preserve">x crock</command>
+        <result xml:space="preserve">A tall, cylindrical tool holder that houses cooking utensils. The Spatula, Toothpicks, Tongs, Whisk, and Wooden Spoon are in the Holder.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1346"></child>
+        </children>
+    </item>
+    <item nodeId="node-1346">
+        <command xml:space="preserve">x tongs</command>
+        <result xml:space="preserve">Metal grabbers that are difficult for a small bun like you to open and close.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1347"></child>
+        </children>
+    </item>
+    <item nodeId="node-1347">
+        <command xml:space="preserve">x toothpicks</command>
+        <result xml:space="preserve">Little wooden sticks.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1348"></child>
+        </children>
+    </item>
+    <item nodeId="node-1348">
+        <command xml:space="preserve">x spatula</command>
+        <result xml:space="preserve">A sturdy, wooden spatula.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1349"></child>
+        </children>
+    </item>
+    <item nodeId="node-1349">
+        <command xml:space="preserve">x whisk</command>
+        <result xml:space="preserve">A mixer with many different slots between looped wires.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1350"></child>
+        </children>
+    </item>
+    <item nodeId="node-1350">
+        <command xml:space="preserve">x wooden spoon</command>
+        <result xml:space="preserve">A straight, wooden spoon.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1351"></child>
+        </children>
+    </item>
+    <item nodeId="node-1351">
+        <command xml:space="preserve">take spoon</command>
+        <result xml:space="preserve">You take the Wooden Spoon with your newly grown arms.
+
+Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1352"></child>
+        </children>
+    </item>
+    <item nodeId="node-1352">
+        <command xml:space="preserve">take whisk</command>
+        <result xml:space="preserve">You take the Whisk with your newly grown arms.
+
+Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1353"></child>
+        </children>
+    </item>
+    <item nodeId="node-1353">
+        <command xml:space="preserve">take toothpicks</command>
+        <result xml:space="preserve">You take the Toothpicks with your newly grown arms.
+
+Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1354"></child>
+        </children>
+    </item>
+    <item nodeId="node-1354">
+        <command xml:space="preserve">take tongs</command>
+        <result xml:space="preserve">You take the Tongs with your newly grown arms.
+
+Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1355"></child>
+        </children>
+    </item>
+    <item nodeId="node-1355">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen Table Top (on the Sponge)
+ The Human's Cutting Board and a Napkin Holder lie on the surface. After looking around, you see a Window, but it is elevated. You need to figure out a way to get out of the Window.
+
+The Sink is to the east, and the Cabinet is to the West.
+
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+You can also see a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1356"></child>
+        </children>
+    </item>
+    <item nodeId="node-1356">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">
+Steamer (on the Sponge)
+A round, bamboo steamer resting on a pot of boiling water. The Human's chopsticks rest in the steamer, and five other steamed buns are huddled next to you. The cover is on the steamer, but you notice light coming through a crack in the top.
+
+Steve is a fellow steamed bun huddled in the corner of the Steamer also trying not to be eaten.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1357"></child>
+        </children>
+    </item>
+    <item nodeId="node-1357">
+        <command xml:space="preserve">take steve</command>
+        <result xml:space="preserve">You take Steve with your newly grown arms.
+
+I don't suppose Steve would care for that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1358"></child>
+        </children>
+    </item>
+    <item nodeId="node-1358">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a Tongs
+  a Toothpicks
+  a Whisk
+  a Wooden Spoon
+  a Chopsticks
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1359"></child>
+        </children>
+    </item>
+    <item nodeId="node-1359">
+        <command xml:space="preserve">talk to steve</command>
+        <result xml:space="preserve">"Hi, there," you say.
+
+"Hi," he replies nervously.
+
+"How long have you been in here," you ask.
+
+"Long enough to know what's about to happen," Steve replies. 
+
+"Do you know how to get out of here?" you ask.
+
+Steve looks around nervously. "I heard the last successful steamed bun was able to escape after eating some green onion from the cutting board. But that was years ago, and you have to figure out how to get out of the steamer."
+
+After hearing this, you decide against talking any further with Steve right now.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1360"></child>
+        </children>
+    </item>
+    <item nodeId="node-1360">
+        <command xml:space="preserve">down</command>
+        <result xml:space="preserve">
+Kitchen Table Top (on the Sponge)
+ The Human's Cutting Board and a Napkin Holder lie on the surface. After looking around, you see a Window, but it is elevated. You need to figure out a way to get out of the Window.
+
+The Sink is to the east, and the Cabinet is to the West.
+
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+You can also see a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1361"></child>
+        </children>
+    </item>
+    <item nodeId="node-1361">
+        <command xml:space="preserve">eat green onions</command>
+        <result xml:space="preserve">You roll over the Cutting Board and eat a green onion, and then you feel a tingling in your body. Suddenly, you watch as two arms grow out of your body.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1362"></child>
+        </children>
+    </item>
+    <item nodeId="node-1362">
+        <command xml:space="preserve">eat green onions</command>
+        <result xml:space="preserve">You roll over the Cutting Board and eat a green onion, and then you feel a tingling in your body. Suddenly, you watch as two arms grow out of your body.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1363"></child>
+        </children>
+    </item>
+    <item nodeId="node-1363">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cabinet (on the Sponge)
+The Cabinet is open. Boxes and jars of food fill the Cabinet. There is also a Utensil Crock filled with various tools.
+
+The Kitchen Table Top is to the east.
+
+You can see a Boxes, a jars and an Utensil Crock here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1364"></child>
+        </children>
+    </item>
+    <item nodeId="node-1364">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen Table Top (on the Sponge)
+ The Human's Cutting Board and a Napkin Holder lie on the surface. After looking around, you see a Window, but it is elevated. You need to figure out a way to get out of the Window.
+
+The Sink is to the east, and the Cabinet is to the West.
+
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+You can also see a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1365"></child>
+        </children>
+    </item>
+    <item nodeId="node-1365">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Sink (on the Sponge)
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1366"></child>
+        </children>
+    </item>
+    <item nodeId="node-1366">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Plate (on the Sponge)
+A Char Siu-filled plate. You see crumbs near the middle of the Plate and a smear of sauce. Your roll behind the Char Siu pile, so the Human doesn't see you.
+
+The Sink is to the west, and you see a bowl to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1367"></child>
+        </children>
+    </item>
+    <item nodeId="node-1367">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Bowl (on the Sponge)
+You roll and plop yourself into a pool of rice. You sink a little into the rice to camouflage yourself from the Human.
+
+The Plate is to the west. You see the Window above you, but you are too short to reach your freedom.
+
+An extremely sticky rice, almost as sticky as glue.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1368"></child>
+        </children>
+    </item>
+    <item nodeId="node-1368">
+        <command xml:space="preserve">i</command>
+        <result xml:space="preserve">You are carrying:
+  a Tongs
+  a Toothpicks
+  a Whisk
+  a Wooden Spoon
+  a Chopsticks
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1369"></child>
+        </children>
+    </item>
+    <item nodeId="node-1369">
+        <command xml:space="preserve">use tongs</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1370"></child>
+        </children>
+    </item>
+    <item nodeId="node-1370">
+        <command xml:space="preserve">use spoon</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1371"></child>
+        </children>
+    </item>
+    <item nodeId="node-1371">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Plate (on the Sponge)
+A Char Siu-filled plate. You see crumbs near the middle of the Plate and a smear of sauce. Your roll behind the Char Siu pile, so the Human doesn't see you.
+
+The Sink is to the west, and you see a bowl to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1372"></child>
+        </children>
+    </item>
+    <item nodeId="node-1372">
+        <command xml:space="preserve">x sauce</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1373"></child>
+        </children>
+    </item>
+    <item nodeId="node-1373">
+        <command xml:space="preserve">x char siu</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1374"></child>
+        </children>
+    </item>
+    <item nodeId="node-1374">
+        <command xml:space="preserve">x place</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1375"></child>
+        </children>
+    </item>
+    <item nodeId="node-1375">
+        <command xml:space="preserve">x plate</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1376"></child>
+        </children>
+    </item>
+    <item nodeId="node-1376">
+        <command xml:space="preserve">x crumbs</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1377"></child>
+        </children>
+    </item>
+    <item nodeId="node-1377">
+        <command xml:space="preserve">get off sponge</command>
+        <result xml:space="preserve">You dismount the Sponge.
+
+Plate
+A Char Siu-filled plate. You see crumbs near the middle of the Plate and a smear of sauce. Your roll behind the Char Siu pile, so the Human doesn't see you.
+
+The Sink is to the west, and you see a bowl to the east.
+
+You can see a Sponge here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1378"></child>
+        </children>
+    </item>
+    <item nodeId="node-1378">
+        <command xml:space="preserve">x crumbs</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1379"></child>
+        </children>
+    </item>
+    <item nodeId="node-1379">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Bowl
+You roll and plop yourself into a pool of rice. You sink a little into the rice to camouflage yourself from the Human.
+
+The Plate is to the west. You see the Window above you, but you are too short to reach your freedom.
+
+An extremely sticky rice, almost as sticky as glue.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1380"></child>
+        </children>
+    </item>
+    <item nodeId="node-1380">
+        <command xml:space="preserve">take rice</command>
+        <result xml:space="preserve">You take the Rice with your newly grown arms.
+
+Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1381"></child>
+        </children>
+    </item>
+    <item nodeId="node-1381">
+        <command xml:space="preserve">up</command>
+        <result xml:space="preserve">
+Window
+The Window is so high. It is open, letting the breeze from the outside flow through the kitchen. The beautiful blue sky and your freedom lie just on the other side.
+
+The Bowl is below you.
+
+You can see a Window Sill here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1382"></child>
+        </children>
+    </item>
+    <item nodeId="node-1382">
+        <command xml:space="preserve">glue spoon to toothpicks</command>
+        <result xml:space="preserve">I didn't understand that sentence.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1383"></child>
+        </children>
+    </item>
+    <item nodeId="node-1383">
+        <command xml:space="preserve">glue spoon and toothpicks</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1384"></child>
+        </children>
+    </item>
+    <item nodeId="node-1384">
+        <command xml:space="preserve">glue spoon</command>
+        <result xml:space="preserve">What do you want to glue the Wooden Spoon and?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1385"></child>
+        </children>
+    </item>
+    <item nodeId="node-1385">
+        <command xml:space="preserve">glue spoon and toothpicks</command>
+        <result xml:space="preserve">You can't use multiple objects with that verb.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1386">
+        <command xml:space="preserve">x buns</command>
+        <result xml:space="preserve">You see nothing special about the Steamed Buns.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1387"></child>
+        </children>
+    </item>
+    <item nodeId="node-1387">
+        <command xml:space="preserve">climb buns</command>
+        <result xml:space="preserve">You climb on top of the Steamed Bun next to you, but the cover is still closed, preventing you from escaping.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1388"></child>
+        </children>
+    </item>
+    <item nodeId="node-1388">
+        <command xml:space="preserve">put chopsticks in crack</command>
+        <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do push the chopsticks to get the cover off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1389"></child>
+        </children>
+    </item>
+    <item nodeId="node-1389">
         <command xml:space="preserve">push chopsticks</command>
         <result xml:space="preserve">You roll onto the end of the chopsticks, making the crack wider. After a couple more seconds, the cover is off, and it falls to the Kitchen Table Top. Now you can escape!
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1492"></child>
+        <children><child nodeId="node-1390"></child>
         </children>
     </item>
-    <item nodeId="node-1492">
+    <item nodeId="node-1390">
         <command xml:space="preserve">climb bun</command>
         <result xml:space="preserve">You climb out of the Steamer and fall on the Kitchen Table Top.
 
@@ -93,7 +948,7 @@ The Human is super hungry, and she waits for the steamed buns to finish cooking.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1563">
+    <item nodeId="node-1391">
         <command xml:space="preserve">test stm</command>
         <result xml:space="preserve">(Testing.)
 
@@ -107,7 +962,9 @@ The Human turns to see what the noise was.
 
 &gt;[3] down.
 Kitchen Table Top
- You land on the granite surface behind the Cover, so the Human can't see you.  The Human's cutting board and a napkin holder lie on the surface.
+ You land on the granite surface behind the Cover, so the Human can't see you.  The Human's Cutting Board and a Napkin Holder lie on the surface. After looking around, you see a Window, but it is elevated. You need to figure out a way to get out of the Window.
+
+The Sink is to the east, and the Cabinet is to the West.
 
 The Human is super hungry, and she waits for the steamed buns to finish cooking.
 
@@ -118,11 +975,64 @@ You can also see a Chopsticks, a Cutting Board (on which is a Green Onions) and 
 [2] push chopsticks
 [3] down.
 </commentary>
-        <children><child nodeId="node-1599"></child>
-            <child nodeId="node-1567"></child>
+        <children><child nodeId="node-1416"></child>
+            <child nodeId="node-1397"></child>
+            <child nodeId="node-1394"></child>
+            <child nodeId="node-1392"></child>
         </children>
     </item>
-    <item nodeId="node-1567">
+    <item nodeId="node-1392">
+        <command xml:space="preserve">west</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1393"></child>
+        </children>
+    </item>
+    <item nodeId="node-1393">
+        <command xml:space="preserve">east</command>
+        <result xml:space="preserve">&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1394">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cabinet
+The Cabinet is open. Boxes and jars of food fill the Cabinet.
+
+The Kitchen Table Top is to the east.
+
+You can see a Boxes, a jars and an Utensil Crock here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1395"></child>
+        </children>
+    </item>
+    <item nodeId="node-1395">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen Table Top
+ The Human's Cutting Board and a Napkin Holder lie on the surface. After looking around, you see a Window, but it is elevated. You need to figure out a way to get out of the Window.
+
+The Sink is to the east, and the Cabinet is to the West.
+
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+You can also see a Chopsticks, a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1396"></child>
+        </children>
+    </item>
+    <item nodeId="node-1396">
+        <command xml:space="preserve">get on sponge</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1397">
         <command xml:space="preserve">test hga</command>
         <result xml:space="preserve">(Testing.)
 
@@ -133,6 +1043,8 @@ You roll behind the Napkin Holder. Now the Human can't see you.
 You roll over the Cutting Board and eat a green onion, and then you feel a tingling in your body. Suddenly, you watch as two arms grow out of your body.
 
 &gt;[3] take chopsticks.
+You take the Chopsticks with your newly grown arms.
+
 Taken.
 
 &gt;</result>
@@ -140,16 +1052,314 @@ Taken.
 [2] eat green onions
 [3] take chopsticks.
 </commentary>
-        <children></children>
+        <children><child nodeId="node-1407"></child>
+            <child nodeId="node-1654"></child>
+            <child nodeId="node-1398"></child>
+        </children>
     </item>
-    <item nodeId="node-1599">
+    <item nodeId="node-1398">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Cabinet
+The Cabinet is open. Boxes and jars of food fill the Cabinet. There is also a Utensil Crock filled with various tools.
+
+The Kitchen Table Top is to the east.
+
+You can see a Boxes, a jars and an Utensil Crock here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1399"></child>
+        </children>
+    </item>
+    <item nodeId="node-1399">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Kitchen Table Top
+ The Human's Cutting Board and a Napkin Holder lie on the surface. After looking around, you see a Window, but it is elevated. You need to figure out a way to get out of the Window.
+
+The Sink is to the east, and the Cabinet is to the West.
+
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+You can also see a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1400"></child>
+        </children>
+    </item>
+    <item nodeId="node-1400">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Sink
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+You can see a Sponge here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1401"></child>
+        </children>
+    </item>
+    <item nodeId="node-1401">
+        <command xml:space="preserve">get on sponge</command>
+        <result xml:space="preserve">You roll onto the Sponge. It dips a little, but stays afloat and seem steady for your journey across the sink.
+
+Sink (on the Sponge)
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1402"></child>
+        </children>
+    </item>
+    <item nodeId="node-1402">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Plate (in the Sponge)
+A Char Siu-filled plate. You see crumbs near the middle of the Plate and a smear of sauce. Your roll behind the Char Siu pile, so the Human doesn't see you.
+
+The Sink is to the west, and you see a bowl to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1403"></child>
+        </children>
+    </item>
+    <item nodeId="node-1403">
+        <command xml:space="preserve">get off sponge</command>
+        <result xml:space="preserve">But you aren't on the Sponge at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1404"></child>
+        </children>
+    </item>
+    <item nodeId="node-1404">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Sink (in the Sponge)
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1405"></child>
+        </children>
+    </item>
+    <item nodeId="node-1405">
+        <command xml:space="preserve">get on sponge</command>
+        <result xml:space="preserve">But you're already in the Sponge.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1406"></child>
+        </children>
+    </item>
+    <item nodeId="node-1406">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Kitchen Table Top (in the Sponge)
+ The Human's Cutting Board and a Napkin Holder lie on the surface. After looking around, you see a Window, but it is elevated. You need to figure out a way to get out of the Window.
+
+The Sink is to the east, and the Cabinet is to the West.
+
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+You can also see a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1654">
+        <command xml:space="preserve">test row</command>
+        <result xml:space="preserve">(Testing.)
+
+&gt;[1] east
+
+Sink
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+You can see a Sponge here.
+
+&gt;[2] get on sponge
+You roll onto the Sponge. It dips a little, but stays afloat and seem steady for your journey across the sink.
+
+Sink (on the Sponge)
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+&gt;[3] east.
+
+Plate (on the Sponge)
+ You get off the Sponge and roll onto the back of the plate, so the Human can't see you. A Char Siu-filled plate. You see Crumbs near the middle of the Plate and a smear of Sauce. Your roll behind the Char Siu pile, so the Human doesn't see you.
+
+The Sink is to the west, and you see a Bowl to the east.
+
+You can see a Char Siu, a Crumbs and a Sauce here.
+
+&gt;</result>
+        <commentary xml:space="preserve">[1] east
+[2] get on sponge
+[3] east.
+</commentary>
+        <children><child nodeId="node-1658"></child>
+        </children>
+    </item>
+    <item nodeId="node-1658">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Sink (on the Sponge)
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1659"></child>
+        </children>
+    </item>
+    <item nodeId="node-1659">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Kitchen Table Top (on the Sponge)
+ The Human's Cutting Board and a Napkin Holder lie on the surface. After looking around, you see a Window, but it is elevated. You need to figure out a way to get out of the Window.
+
+The Sink is to the east, and the Cabinet is to the West.
+
+The Human is super hungry, and she waits for the steamed buns to finish cooking.
+
+You can also see a Cutting Board (on which is a Green Onions) and a Napkin Holder here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1407">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Sink
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+You can see a Sponge here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1408"></child>
+        </children>
+    </item>
+    <item nodeId="node-1408">
+        <command xml:space="preserve">get on sponge</command>
+        <result xml:space="preserve">You roll onto the Sponge. It dips a little, but stays afloat and seem steady for your journey across the sink.
+
+Sink (on the Sponge)
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1409"></child>
+        </children>
+    </item>
+    <item nodeId="node-1409">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Plate (on the Sponge)
+A Char Siu-filled plate. You see crumbs near the middle of the Plate and a smear of sauce. Your roll behind the Char Siu pile, so the Human doesn't see you.
+
+The Sink is to the west, and you see a bowl to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1415"></child>
+            <child nodeId="node-1410"></child>
+        </children>
+    </item>
+    <item nodeId="node-1410">
+        <command xml:space="preserve">get on sponge</command>
+        <result xml:space="preserve">But you're already in the Sponge.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1411"></child>
+        </children>
+    </item>
+    <item nodeId="node-1411">
+        <command xml:space="preserve">get off sponge</command>
+        <result xml:space="preserve">But you aren't on the Sponge at the moment.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1412"></child>
+        </children>
+    </item>
+    <item nodeId="node-1412">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Sink (in the Sponge)
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1413"></child>
+        </children>
+    </item>
+    <item nodeId="node-1413">
+        <command xml:space="preserve">undo</command>
+        <result xml:space="preserve">Plate
+[Previous turn undone.]
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1414"></child>
+        </children>
+    </item>
+    <item nodeId="node-1414">
+        <command xml:space="preserve">w</command>
+        <result xml:space="preserve">
+Sink (in the Sponge)
+A basin filled halfway with soapy water. The water level is too deep for you to roll across, but will keep you hidden from the Human. A Sponge floats on top of the water right in front of you.
+
+ The Kitchen Table Top is to the west, and the Plate is to the east.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1415">
+        <command xml:space="preserve">get off sponge</command>
+        <result xml:space="preserve">You dismount the Sponge.
+
+Plate
+A Char Siu-filled plate. You see crumbs near the middle of the Plate and a smear of sauce. Your roll behind the Char Siu pile, so the Human doesn't see you.
+
+The Sink is to the west, and you see a bowl to the east.
+
+You can see a Sponge here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1416">
         <command xml:space="preserve">eat green onions</command>
         <result xml:space="preserve">You roll over the Cutting Board and eat a green onion, and then you feel a tingling in your body. Suddenly, you watch as two arms grow out of your body.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1531">
+    <item nodeId="node-1417">
         <command xml:space="preserve">test STM</command>
         <result xml:space="preserve">(Testing.)
 
@@ -190,7 +1400,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
 </commentary>
         <children></children>
     </item>
-    <item nodeId="node-1493">
+    <item nodeId="node-1418">
         <command xml:space="preserve">talk to troy</command>
         <result xml:space="preserve">"Hi, there," you say.
 
@@ -209,7 +1419,7 @@ After hearing this, you decide against talking any further with Troy right now.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1600">
+    <item nodeId="node-1419">
         <command xml:space="preserve">talk to steve</command>
         <result xml:space="preserve">"Hi, there," you say.
 
@@ -228,21 +1438,21 @@ After hearing this, you decide against talking any further with Steve right now.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1494">
+    <item nodeId="node-1420">
         <command xml:space="preserve">take chopsticks</command>
         <result xml:space="preserve">You try, but you don't have any hands. Try  nudging something.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1495"></child>
+        <children><child nodeId="node-1421"></child>
         </children>
     </item>
-    <item nodeId="node-1495">
+    <item nodeId="node-1421">
         <command xml:space="preserve">nudge chopsticks</command>
         <result xml:space="preserve">&gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1496">
+    <item nodeId="node-1422">
         <command xml:space="preserve">put the chopsticks in the crack</command>
         <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do is open the steamer.
 
@@ -250,26 +1460,26 @@ After hearing this, you decide against talking any further with Steve right now.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1497"></child>
+        <children><child nodeId="node-1423"></child>
         </children>
     </item>
-    <item nodeId="node-1497">
+    <item nodeId="node-1423">
         <command xml:space="preserve">push chopsticks</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1498"></child>
+        <children><child nodeId="node-1424"></child>
         </children>
     </item>
-    <item nodeId="node-1498">
+    <item nodeId="node-1424">
         <command xml:space="preserve">push the chopsticks</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1499">
+    <item nodeId="node-1425">
         <command xml:space="preserve">put chopsticks in the crack</command>
         <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do is open the steamer.
 
@@ -277,10 +1487,10 @@ After hearing this, you decide against talking any further with Steve right now.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1500"></child>
+        <children><child nodeId="node-1426"></child>
         </children>
     </item>
-    <item nodeId="node-1500">
+    <item nodeId="node-1426">
         <command xml:space="preserve">push chopsticks</command>
         <result xml:space="preserve">You push the Chopsticks around and accidentally poke one of the steamed buns!
 
@@ -289,41 +1499,41 @@ After hearing this, you decide against talking any further with Steve right now.
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1501">
+    <item nodeId="node-1427">
         <command xml:space="preserve">put chopsticks in steamer</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1502"></child>
+        <children><child nodeId="node-1428"></child>
         </children>
     </item>
-    <item nodeId="node-1502">
+    <item nodeId="node-1428">
         <command xml:space="preserve">put chopsticks in crack</command>
         <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do is open the steamer.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1503"></child>
+        <children><child nodeId="node-1429"></child>
         </children>
     </item>
-    <item nodeId="node-1503">
+    <item nodeId="node-1429">
         <command xml:space="preserve">push chopsticks</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1504">
+    <item nodeId="node-1430">
         <command xml:space="preserve">put chopsticks in crack</command>
         <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do push the chopsticks to get the cover off.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1505"></child>
+        <children><child nodeId="node-1431"></child>
         </children>
     </item>
-    <item nodeId="node-1505">
+    <item nodeId="node-1431">
         <command xml:space="preserve">push chopsticks</command>
         <result xml:space="preserve">You roll onto the end of the chopsticks, making the crack wider. After a couple more seconds, the cover is off, and it falls to the Kitchen Table Top. Now you can escape!
 
@@ -331,123 +1541,123 @@ The Human turns to see what the noise was.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1508"></child>
-            <child nodeId="node-1506"></child>
+        <children><child nodeId="node-1434"></child>
+            <child nodeId="node-1432"></child>
         </children>
     </item>
-    <item nodeId="node-1506">
+    <item nodeId="node-1432">
         <command xml:space="preserve">get on steamed buns</command>
         <result xml:space="preserve">That's not something you can enter.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1507"></child>
+        <children><child nodeId="node-1433"></child>
         </children>
     </item>
-    <item nodeId="node-1507">
+    <item nodeId="node-1433">
         <command xml:space="preserve">climb on steamed buns</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1508">
+    <item nodeId="node-1434">
         <command xml:space="preserve">d</command>
         <result xml:space="preserve">&gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1530"></child>
+        <children><child nodeId="node-1435"></child>
         </children>
     </item>
-    <item nodeId="node-1530">
+    <item nodeId="node-1435">
         <command xml:space="preserve">hide behind napkin holder</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1509">
+    <item nodeId="node-1436">
         <command xml:space="preserve">push chopsticks</command>
         <result xml:space="preserve">You push the Chopsticks around and accidentally poke one of the other steamed buns!
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1510"></child>
+        <children><child nodeId="node-1437"></child>
         </children>
     </item>
-    <item nodeId="node-1510">
+    <item nodeId="node-1437">
         <command xml:space="preserve">put chopsticks in crack</command>
         <result xml:space="preserve">You nudge the chopsticks into the crack until you know you have good leverage. Now all you have to do is open the steamer.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1511"></child>
+        <children><child nodeId="node-1438"></child>
         </children>
     </item>
-    <item nodeId="node-1511">
+    <item nodeId="node-1438">
         <command xml:space="preserve">push chopsticks</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1512">
+    <item nodeId="node-1439">
         <command xml:space="preserve">get on steamed buns</command>
         <result xml:space="preserve">That's not something you can enter.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1513"></child>
+        <children><child nodeId="node-1440"></child>
         </children>
     </item>
-    <item nodeId="node-1513">
+    <item nodeId="node-1440">
         <command xml:space="preserve">stand on steamed buns</command>
         <result xml:space="preserve">That's not something you can stand on.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1514"></child>
+        <children><child nodeId="node-1441"></child>
         </children>
     </item>
-    <item nodeId="node-1514">
+    <item nodeId="node-1441">
         <command xml:space="preserve">stand on buns</command>
         <result xml:space="preserve">That's not something you can stand on.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1515"></child>
+        <children><child nodeId="node-1442"></child>
         </children>
     </item>
-    <item nodeId="node-1515">
+    <item nodeId="node-1442">
         <command xml:space="preserve">climb on buns</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1516">
+    <item nodeId="node-1443">
         <command xml:space="preserve">climb steamed buns</command>
         <result xml:space="preserve">You climb on top of the Steamed Bun next to you, but the cover is still closed, preventing you from escaping.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
-        <children><child nodeId="node-1517"></child>
+        <children><child nodeId="node-1444"></child>
         </children>
     </item>
-    <item nodeId="node-1517">
+    <item nodeId="node-1444">
         <command xml:space="preserve">get on steam buns</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1518">
+    <item nodeId="node-1445">
         <command xml:space="preserve">climb on buns</command>
         <result xml:space="preserve">You can't see any such thing.
 
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
-    <item nodeId="node-1539">
+    <item nodeId="node-1446">
         <command xml:space="preserve">Test STM</command>
         <result xml:space="preserve">(Testing.)
 
