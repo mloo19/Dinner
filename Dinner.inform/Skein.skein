@@ -37,6 +37,7 @@ You can also see a Chopsticks here.
             <child nodeId="node-1418"></child>
             <child nodeId="node-1417"></child>
             <child nodeId="node-3429"></child>
+            <child nodeId="node-3515"></child>
             <child nodeId="node-1391"></child>
             <child nodeId="node-1386"></child>
             <child nodeId="node-1313"></child>
@@ -1539,6 +1540,15 @@ You can see a Sponge here.
         <command xml:space="preserve">eat green onions</command>
         <result xml:space="preserve">You roll over the Cutting Board and eat a green onion, and then you feel a tingling in your body. Suddenly, you watch as two arms grow out of your body.
 
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-3515">
+        <command xml:space="preserve">test me</command>
+        <result xml:space="preserve">&gt;--&gt; The following tests are available:
+'test STM'
+'test HGA'
+'test row'
 &gt;</result>
         <commentary xml:space="preserve"></commentary>
     </item>
