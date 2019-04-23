@@ -3,6 +3,7 @@
 When play begins:
 	say "You wake up in a steaming hot bath. Suddenly, a huge hand lifts the ceiling of the container you are in. Light surrounds you, and you realize you are in a steamer with five other steamed buns. A huge set of chopsticks reach in and grab the steamed bun next to you. You really need to find a way out before you are next."
 	
+[Code to display a player's location in the game and possible exits in the header.]
 When play begins:
 	now left hand status line is "Exits: [exit list]";
 	now right hand status line is "[location]".
@@ -12,6 +13,12 @@ To say exit list:
 	repeat with way running through directions:
 		let place be the room way from the location;
 		if place is a room, say " [way] ".
+		
+[Disable take all]
+Rule for deciding whether all includes something: it does not.
+
+Rule for printing a parser error when the latest parser error is the nothing to do error:
+	say "You should figure out what you actually need instead of cheating.".
 
 The description of the player is "A white, fluffy bun."
 
@@ -317,6 +324,7 @@ The Tongs are a thing in the Utensil Crock. It is undescribed. The description i
 
 The Whisk is a thing in the Utensil Crock. It is undescribed. The description is "A mixer with many different slots between looped wires."
 
+[For this combine puzzle, I used the code from Brianna Hartner's "Tonic" as a structure.]
 Gluing is an action applying to two things. Understand "glue [something] and [something]" or "glue [something] and [something] together" or "glue [something] to [something]" or "combine [something] and [something]" as gluing.
 
 Building is an action applying to nothing. Understand "build" or "make" or "construct" as building.
